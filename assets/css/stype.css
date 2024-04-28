@@ -60,6 +60,7 @@ z-index: 1;
 	position: relative;
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 }
 .navbar{
 	display: flex;
@@ -98,10 +99,7 @@ padding: 1.2rem;
 }
 /*  */
 /* info */
-.hero{
-	margin-top: 13rem;
-	display: flex;
-}
+
 .hero .info{
 width: 51%;
 }
