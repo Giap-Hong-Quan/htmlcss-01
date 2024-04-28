@@ -46,15 +46,26 @@ a{
 }
 /* header */
 /* nav */
+.fixed-header{
+	background-color:#E6F0FF;
+padding-top: 2.6rem;
+position: sticky;
+top: -2.6rem;
+z-index: 1;
+}
 .header{
 	background-color:#E6F0FF;
 	height: 100vh;
 	position: relative;
+	display: flex;
+	flex-direction: column;
 }
 .navbar{
 	display: flex;
 	align-items: center;
-	padding-top: 3.8rem;
+	/* padding-top: 3.8rem; */
+padding: 1.2rem;
+	
 }
 .navbar ul{
 	display: flex;
