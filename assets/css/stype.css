@@ -98,7 +98,7 @@ width: 51%;
 	font-style: 1.5rem;
 	font-weight: 500;
 	line-height: 1.5rem;
-	color: #687690;
+	color: #687691;
 	letter-spacing: 0.018rem;
 }
 .hero .title{
@@ -441,9 +441,6 @@ margin-top: 2.4rem;
 /* subscription */
 .subscription{
 	margin-top: 9rem;
-	
-}
-.subscription .content{
 }
 .subscription .content .body{
 	height: 37rem;
