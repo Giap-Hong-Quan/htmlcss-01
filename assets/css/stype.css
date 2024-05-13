@@ -46,6 +46,7 @@ a{
 	color:bisque;
 }
 /* header */
+
 /* nav */
 .fixed-header{
 	background-color:#E6F0FF;
@@ -120,6 +121,7 @@ width: 51%;
 	line-height: 7.6rem;
 }
 .hero .desc{
+	width: 38.5rem;
 	width: 55rem;
 	color: #5A6473;
 font-size: 1.8rem;
@@ -280,7 +282,8 @@ line-height: 3rem;
 	left: 2px;
 }
 .featured .list{
-	display: flex;
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
 	margin-top: 7rem;
 	gap: 3rem;
 }
@@ -503,7 +506,8 @@ margin-top: 1.5rem;
 	padding: 5rem 0 5.8rem;
 }
 .footer .row{
-	display: flex;
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
 	gap: 18.5rem;
 }
 

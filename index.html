@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/stype.css" />
     <link rel="stylesheet" href="./assets/font/stylesheet.css" />
-<!-- favicon -->
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <!-- favicon -->
 <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png">
 <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon/apple-icon-72x72.png">
@@ -28,13 +29,19 @@
   </head>
   <body>
   
-      <!--header-->
+      <!--pc header-->
       <div class="fixed-header">
         <div class="content">
           <nav class="navbar">
+            <!-- table/mobile menu -->
+            <label for="menu-checkbox" class="toggle-menu">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path fill="currentColor" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+
+            </label>
             <!--logo-->
             <a href="/">
-              <img src="./assets/img/Logo.svg" alt="Besnik.">
+              <img class="logo" src="./assets/img/Logo.svg" alt="Besnik.">
             </a>
             <!--navigation-->
             <ul>
@@ -63,7 +70,47 @@
          </nav>
         </div>
       </div>
-      <main">
+      <!-- table/moblile header -->
+      <header class="mobile-header">
+        <input class="menu-checkbox" type="checkbox" name="" id="menu-checkbox" hidden>
+        <label for="menu-checkbox" class="menu-overlay"></label>
+        <div class="menu-drawer">
+          <ul class="menu-navbar">
+            <a href="/">
+              <img class="menu-logo" src="./assets/img/Logo.svg" alt="Besnik.">
+            </a>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#serices">Serices</a>
+            </li>
+            
+            <li>
+              <a href="#sesources">Resources</a>
+            </li>
+            <li>
+              <a href="#features">Features</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+            <li class="hide-on-table hide-separate">
+              <a href="#!">sign in</a>
+            </li>
+            <li class="hide-on-table">
+              <a href="#!">sign up</a>
+            </li>
+          </ul>
+          <label for="menu-checkbox" class="menu-navbar-close">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path fill="currentColor" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg>
+          </label>
+        </div>
+        
+        
+      </header>
+      <main>
       <header class="header">
         <div class="content">
            <div class="hero">
@@ -89,7 +136,7 @@
             </div>
           </div>
           <div class="row row_dsc">
-            <p>More than 45,000+ companies trust besnik</p>
+            <p  >More than 45,000+ companies trust besnik</p>
             <p>5 Star Ratings (2k+ Review)</p>
           </div>
           <div class="row_img">
@@ -279,7 +326,7 @@
               <p class="desc">When you own a home, you’re committing to living in one location for a while. In a recent Trulia survey, we found that five out of six respondents said finding the right neighborhood </p>
             </div>
           </div>
-          <div class="row">
+          <div class="row row-qty">
             <div class="qty-item">
               <strong class="qty">2,500</strong>
               <div class="qty-desc">Homes For Sale</div>
@@ -300,7 +347,7 @@
         <div class="content">
           <div class="body">
             <div class="info">
-              <h2 class="sub-title line-clamp">Subscribe to our Newsletter!</h2>
+              <h2 class="sub-title ">Subscribe to our Newsletter!</h2>
               <p class="desc">Subscribe to our newsletter and stay updated.</p>
               <a href="">
                 <div class="btn">Subscribe</div>
@@ -311,85 +358,85 @@
         </div>
       </div>
     </main>
-      <footer class="footer">
-        <div class="content">
-          <div class="row">
-            <div class="column">
-              <h3 class="heading">Product</h3>
-              <ul class="list">
-                <li class="item">
-                  <a href="" class="link">Listing</a>
-                </li>
-                <li class="item">
-                  <a href="" class="link">Property</a>
-                </li>
-                <li class="item">
-                  <a href="" class="link">Agents</a>
-                </li>
-                <li class="item">
-                  <a href="" class="link">Blog</a>
-                </li>
+    <footer class="footer">
+      <div class="content">
+        <div class="row">
+          <div class="column">
+            <h3 class="heading">Product</h3>
+            <ul class="list">
+              <li class="item">
+                <a href="" class="link">Listing</a>
+              </li>
+              <li class="item">
+                <a href="" class="link">Property</a>
+              </li>
+              <li class="item">
+                <a href="" class="link">Agents</a>
+              </li>
+              <li class="item">
+                <a href="" class="link">Blog</a>
+              </li>
 
-              </ul>
-            </div>
-            <div class="column">
-              <h3 class="heading">Resources</h3>
-              <ul class="list">
-                <li class="item">
-                  <a href="" class="link">Our Homes</a>
-                </li>
-                <li class="item">
-                  <a href="" class="link">Member Stories</a>
-                </li>
-                <li class="item">
-                  <a href="" class="link">Video</a>
-                </li>
-                <li class="item">
-                  <a href="" class="link">Free trial</a>
-                </li>
-
-              </ul>
-            </div>
-            <div class="column">
-              <h3 class="heading">Company</h3>
-              <ul class="list">
-                <li class="item">
-                  <a href="" class="link">Patnerships</a>
-                </li>
-                <li class="item">
-                  <a href="" class="link">Terms of use</a>
-                </li>
-                <li class="item">
-                  <a href="" class="link">Privacy</a>
-                </li>
-                <li class="item">
-                  <a href="" class="link">Sitemap</a>
-                </li>
-
-              </ul>
-            </div>
-            <div class="column">
-              <h3 class="heading">Get in touch</h3>
-              <p class="desc">You’ll find your next home, in any style you prefer.</p>
-              <div class="connect">
-                <a href="">
-                  <img src="./assets/img/Facebook icon.svg" alt="" class="img-icon">
-                </a>
-                <a href="">
-                  <img src="./assets/img/twitter icon.svg" alt="" class="img-icon">
-                </a>
-                <a href="">
-                  <img src="./assets/img/lindedin icon.svg" alt="" class="img-icon">
-                </a>
-              </div>
-            </div>
+            </ul>
           </div>
-          <div class="end">
-            <img src="./assets/img/Logo.svg" alt="Besnik.">
-            <p class="desc">Copyright 2020.com, All rights reserved.</p>
+          <div class="column">
+            <h3 class="heading">Resources</h3>
+            <ul class="list">
+              <li class="item">
+                <a href="" class="link">Our Homes</a>
+              </li>
+              <li class="item">
+                <a href="" class="link">Member Stories</a>
+              </li>
+              <li class="item">
+                <a href="" class="link">Video</a>
+              </li>
+              <li class="item">
+                <a href="" class="link">Free trial</a>
+              </li>
+
+            </ul>
+          </div>
+          <div class="column">
+            <h3 class="heading">Company</h3>
+            <ul class="list">
+              <li class="item">
+                <a href="" class="link">Patnerships</a>
+              </li>
+              <li class="item">
+                <a href="" class="link">Terms of use</a>
+              </li>
+              <li class="item">
+                <a href="" class="link">Privacy</a>
+              </li>
+              <li class="item">
+                <a href="" class="link">Sitemap</a>
+              </li>
+
+            </ul>
+          </div>
+          <div class="column">
+            <h3 class="heading">Get in touch</h3>
+            <p class="desc">You’ll find your next home, in any style you prefer.</p>
+            <div class="connect">
+              <a href="">
+                <img src="./assets/img/Facebook icon.svg" alt="" class="img-icon">
+              </a>
+              <a href="">
+                <img src="./assets/img/twitter icon.svg" alt="" class="img-icon">
+              </a>
+              <a href="">
+                <img src="./assets/img/lindedin icon.svg" alt="" class="img-icon">
+              </a>
+            </div>
           </div>
         </div>
-      </footer>
+        <div class="end">
+          <img src="./assets/img/Logo.svg" alt="Besnik.">
+          <p class="desc">Copyright 2020.com, All rights reserved.</p>
+        </div>
+      </div>
+  </footer>
  
   </body>
 </html>
